@@ -1,3 +1,1 @@
-NODE_ENV=production
-DEBUG=themis:*
-npm start
+npm run prod

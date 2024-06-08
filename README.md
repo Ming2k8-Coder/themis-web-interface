@@ -34,6 +34,10 @@ When the module installation finishes you can start the server anytime with:
 ```
 npm start
 ```
+When deploy server 
+```
+npm run prod
+```
 
 ## Configuration
 The most basic configurations are available in `config.js`, which includes:
