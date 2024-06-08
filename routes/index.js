@@ -21,7 +21,7 @@ router.use('/files', require('./files'));
 router.use('/change-password', require('./changePassword'));
 
 router.get('/logout', (req, res) => {
-	req.logout();
+	req.logout(res,function(){});
 	return res.redirect('/');
 });
 
