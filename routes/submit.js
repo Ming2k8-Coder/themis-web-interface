@@ -53,10 +53,9 @@ router.post('/', (req, res, next) => {
 	});
 	UserLog.addScore(req.user.username, q.problem, { });
 	UserLog.addSubmit(req.user.username, `0[${req.user.username}][${q.problem}]${q.ext}`, q.content);
-	fs.writeFile(path.join(submitPath, `0[${req.user.username}][${q.problem}]${q.ext}`), q.content, err => {
+	fs.writeFile(path.join(submitPath,`${req.user.username}`,`[${req.user.username}][${q.problem}]${q.ext}`), q.content, err => {
 		if (err) return next(err);
 		res.json(true);
 	});
 });
-
 module.exports = router;
