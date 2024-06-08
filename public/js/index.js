@@ -763,10 +763,11 @@
                       .then(function (e) {
                         var n = e.status,
                           r = e.data;
-                        if (200 !== n || !0 !== r)
+                        if (200 !== n || !0 !== r){
                           return Promise.reject(
                             new Error(r || "Submit failed")
-                          );
+                          );}
+                        else {alert("Nộp bài thành công");}
                         var i = t.state.submissions.slice();
                         return (
                           (i[t.state.selected].saveStatus = "submitted"),

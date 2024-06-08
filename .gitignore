@@ -19,9 +19,9 @@ dist
 
 # Databases files
 data/*.db*
-data/submit/*.cpp
-data/submit/*.pas
-data/submit/*.py
+data/submit/
+data/submit/
+data/submit/
 
 # Logs
 logs
