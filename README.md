@@ -64,10 +64,9 @@ Open a terminal within the source code's root folder and type `yarn build` (`npm
 Alternatively `yarn build-jsx` (`npm run build-jsx`) can be used to only build the JSX files with Browserify.
 
 ## Contributing
-git attribute fix soon
 Please follow the ESLint restrictions included with the source code. I am glad to look at any problem you face and will kindly respond to all legitimate PRs so do not hesitate. Feature requests are also welcomed, however if you only come up with the idea and no details or any intent to code / help me out with its implementation, please go away.
 
-### LF / CRLF Problem
+### LF / CRLF Problem (git attribute fix soon)
 All code files ends a line with `LF`. Only real data files (e.g. log files in `tests/`) can be allowed to end with CRLF. I will disaprove any PR using CRLF.
 
 ### `public/js/index.js` file
