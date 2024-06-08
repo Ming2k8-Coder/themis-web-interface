@@ -5,8 +5,8 @@ module.exports = {
   sessionSecret: "gisjWikvZWHMiQzNmTV7",
   // Bảng xếp hạng
   allowScoreboard: true,
-  // Tự đặt bài thi vào folder tương ứng khi nộp bài (themis fast import)
-  autoPlaceFileToDir: true,
+	// Tự đặt bài thi vào folder tương ứng khi nộp bài (themis fast import)
+	themisCompatible: true,
   registration: {
     // Cho phép đăng kí?
     allow: false,
