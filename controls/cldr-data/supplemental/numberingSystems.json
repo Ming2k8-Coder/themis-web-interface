@@ -1,9 +1,8 @@
 {
   "supplemental": {
     "version": {
-      "_number": "$Revision: 12732 $",
-      "_unicodeVersion": "9.0.0",
-      "_cldrVersion": "31.0.1"
+      "_unicodeVersion": "12.1.0",
+      "_cldrVersion": "36"
     },
     "numberingSystems": {
       "adlm": {
@@ -74,6 +73,14 @@
         "_rules": "georgian",
         "_type": "algorithmic"
       },
+      "gong": {
+        "_digits": "𑶠𑶡𑶢𑶣𑶤𑶥𑶦𑶧𑶨𑶩",
+        "_type": "numeric"
+      },
+      "gonm": {
+        "_digits": "𑵐𑵑𑵒𑵓𑵔𑵕𑵖𑵗𑵘𑵙",
+        "_type": "numeric"
+      },
       "grek": {
         "_rules": "greek-upper",
         "_type": "algorithmic"
@@ -122,6 +129,10 @@
         "_digits": "𖭐𖭑𖭒𖭓𖭔𖭕𖭖𖭗𖭘𖭙",
         "_type": "numeric"
       },
+      "hmnp": {
+        "_digits": "𞅀𞅁𞅂𞅃𞅄𞅅𞅆𞅇𞅈𞅉",
+        "_type": "numeric"
+      },
       "java": {
         "_digits": "꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙",
         "_type": "numeric"
@@ -132,6 +143,10 @@
       },
       "jpanfin": {
         "_rules": "ja/SpelloutRules/spellout-cardinal-financial",
+        "_type": "algorithmic"
+      },
+      "jpanyear": {
+        "_rules": "ja/SpelloutRules/spellout-numbering-year-latn",
         "_type": "algorithmic"
       },
       "kali": {
@@ -242,6 +257,10 @@
         "_digits": "𐒠𐒡𐒢𐒣𐒤𐒥𐒦𐒧𐒨𐒩",
         "_type": "numeric"
       },
+      "rohg": {
+        "_digits": "𐴰𐴱𐴲𐴳𐴴𐴵𐴶𐴷𐴸𐴹",
+        "_type": "numeric"
+      },
       "roman": {
         "_rules": "roman-upper",
         "_type": "algorithmic"
@@ -312,6 +331,10 @@
       },
       "wara": {
         "_digits": "𑣠𑣡𑣢𑣣𑣤𑣥𑣦𑣧𑣨𑣩",
+        "_type": "numeric"
+      },
+      "wcho": {
+        "_digits": "𞋰𞋱𞋲𞋳𞋴𞋵𞋶𞋷𞋸𞋹",
         "_type": "numeric"
       }
     }
