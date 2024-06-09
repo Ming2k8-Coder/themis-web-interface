@@ -1,7 +1,7 @@
-import assert from 'chai';
-import fs from 'fs';
-import path from 'path';
-import Log from '../controls/judgelog.cjs';
+const assert = require('chai').assert;
+const fs = require('fs');
+const path = require('path');
+const Log = require('../controls/judgelog.cjs');
 
 describe('Log', () => {
 	describe('#parse', () => {
@@ -53,7 +53,7 @@ describe('Log', () => {
 				done();
 			});
 		});
-		it('Should parse a compile-error log without error(if err, run with sudo)', done => {
+		it('Should parse a compile-error log without error', done => {
 			fs.readFile(path.join(process.cwd(), 'tests', 'compile-error.log'), 'utf-8', (err, file) => {
 				if (err) return done(err);
 				const f = Log.__parse('dangcuong_123', 'HIGHWAY', file);

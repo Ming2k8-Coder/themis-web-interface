@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const rEs = require("escape-string-regexp");
 const debug = require("debug")("themis:judgelog");
-const Scoring = require("./scoring");
-const Config = require("../config");
+const Scoring = require("./scoring.cjs");
+const Config = require("../config.cjs");
 const logsPath = path.join(process.cwd(), "data", "submit", "logs");
-const UserLog = require("./userlog");
+const UserLog = require("./userlog.cjs");
 
 const globalize = require("globalize");
 globalize.load(
@@ -218,3 +218,4 @@ getLog.setLog = (user, problem, ext, contents) => {
 //getLog.Log = Log;
 //export default Log;
 module.exports = getLog;
+module.exports = Log;
