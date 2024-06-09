@@ -4,7 +4,7 @@ import { Label, Badge, Button, Glyphicon } from 'react-bootstrap';
 import Dimensions from 'react-dimensions';
 import FlipMove from 'react-flip-move';
 import { Add, Upload } from './submission-create.jsx';
-const Submission = require('../controls/submission');
+const Submission = require('../controls/submission.cjs');
 const MediaQuery = require('react-responsive');
 
 const JudgeLog = require('./judgelog.jsx');

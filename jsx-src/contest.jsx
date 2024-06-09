@@ -1,5 +1,5 @@
 import React from 'react';
-const axios = require('axios');
+import axios from 'axios'
 const countdown = require('countdown');
 countdown.setLabels(
 	' mili-giây| giây| phút| giờ| ngày| tuần| tháng| năm| thập kỉ| thế kỉ| thiên niên kỉ',

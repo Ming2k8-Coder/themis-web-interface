@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Scoring = require('../controls/scoring');
+const Scoring = require('../controls/scoring.cjs');
 
 router.use((req, res, next) => {
 	if (global.Config.allowScoreboard) return next();

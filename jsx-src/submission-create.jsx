@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Form, FormControl, Button, Glyphicon } from 'react-bootstrap';
-const Submission = require('../controls/submission');
+const Submission = require('../controls/submission.cjs');
 
 /**
  * The inline form to add a submission by providing a name and extension.

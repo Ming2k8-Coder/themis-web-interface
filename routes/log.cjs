@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const debug = require('debug')('themis:router:log');
-const JudgeLog = require('../controls/judgelog');
-const Config = require('../config');
+const JudgeLog = require('../controls/judgelog.cjs');
+const Config = require('../config.cjs');
 
 if (Config.rateLimiter && Config.rateLimiter.logRequest !== null) {
 	debug('Rate limiter enabled.');
-	const rateLimiter = require('../controls/rate-limiter')(Config.rateLimiter.logRequest);
+	const rateLimiter = require('../controls/rate-limiter.cjs')(Config.rateLimiter.logRequest);
 	router.post('/', rateLimiter.prevent);
 }
 

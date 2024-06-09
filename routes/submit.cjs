@@ -3,9 +3,9 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 const debug = require("debug")("themis:router:submit");
-const Log = require("../controls/judgelog");
-const UserLog = require("../controls/userlog");
-const Config = require("../config");
+const Log = require("../controls/judgelog.cjs");
+const UserLog = require("../controls/userlog.cjs");
+const Config = require("../config.cjs");
 
 const submitPath = path.join(process.cwd(), "data", "submit");
 

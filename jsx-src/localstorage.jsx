@@ -1,4 +1,4 @@
-const Submission = require('../controls/submission');
+const Submission = require('../controls/submission.cjs');
 
 /**
  * The localStorage wrapper.

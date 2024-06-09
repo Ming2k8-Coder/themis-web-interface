@@ -2,13 +2,13 @@
   "name": "themis-web-interface",
   "version": "0.4.0",
   "description": "A web interface for Themis, written in Node.js",
-  "main": "index.js",
+  "main": "index.cjs",
   "type": "module",
   "scripts": {
     "postinstall": "cross-env DEBUG=gulp* gulp copy-deps",
     "test": "mocha --recursive tests/",
     "start": "cross-env DEBUG=themis:* node index.js",
-    "prod": "cross-env NODE_ENV=production DEBUG=themis:* node index.js",
+    "prod": "cross-env NODE_ENV=production DEBUG=themis:* node index.cjs",
     "build-jsx": "cross-env NODE_ENV=production DEBUG=gulp* gulp render-jsx-only",
     "build": "cross-env NODE_ENV=production DEBUG=gulp* gulp build",
     "watch": "cross-env DEBUG=gulp gulp watch"
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/natsukagami/themis-web-interface#readme",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.7.2",
     "bluebird": "^3.4.7",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.4.1",

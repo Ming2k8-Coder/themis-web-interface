@@ -8,9 +8,9 @@ const TestDetails = require('./test-details.jsx');
 const LC = require('./localstorage.jsx');
 const Contest = require('./contest.jsx');
 
-const axios = require('axios');
+import axios from 'axios'
 
-const Submission = require('../controls/submission');
+const Submission = require('../controls/submission.cjs');
 
 /**
  * Main is the starting point React component.

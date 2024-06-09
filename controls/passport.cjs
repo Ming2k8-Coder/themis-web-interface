@@ -1,7 +1,7 @@
 const passport = require('passport');
 const md5 = require('md5');
 const LocalStrategy = require('passport-local').Strategy;
-const User = require('./user');
+const User = require('./user.cjs');
 
 /**
  * A special failure that occurs when user lookup fails.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
-const axios = require('axios');
+import axios from 'axios'
 
 /**
  * Receives judge queue information and displays the size of the judge queue.

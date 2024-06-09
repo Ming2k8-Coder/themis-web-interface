@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ListGroup, ListGroupItem, Button, Glyphicon } from 'react-bootstrap';
-const axios = require('axios');
+import axios from 'axios'
 
 /**
  * FileItem is a list item for the Files collection. Each can be clicked on

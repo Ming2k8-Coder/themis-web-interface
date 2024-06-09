@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const debug = require('debug')('themis:router:register');
-const User = require('../controls/user');
-const Config = require('../config');
+const User = require('../controls/user.cjs');
+const Config = require('../config.cjs');
 
 if (Config.rateLimiter && Config.rateLimiter.register !== null) {
 	debug('Rate limiter enabled.');
-	const rateLimiter = require('../controls/rate-limiter')(Config.rateLimiter.register);
+	const rateLimiter = require('../controls/rate-limiter.cjs')(Config.rateLimiter.register);
 	router.use(rateLimiter.prevent);
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import reactDom from 'react-dom';
 import { Table, Button, Glyphicon } from 'react-bootstrap';
 import FlipMove from 'react-flip-move';
-const axios = require('axios');
+import axios from 'axios'
 
 /**
  * Class Main provides an entrance to the scoreboard.

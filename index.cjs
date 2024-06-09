@@ -13,17 +13,17 @@ const path = require('path');
 const debug = require('debug');
 const http = require('http');
 const passport = require('passport');
-const codefunPassport = require('./controls/passport');
+const codefunPassport = require('./controls/passport.cjs');
 const session = require('express-session');
 const lokiStore = require('connect-loki')(session);
 const axios = require('axios');
 
 try {
-	require('./config');
+	require('./config.cjs');
 } catch (e) {
-	throw new Error('Please configure your config.js file!');
+	throw new Error('Please configure your config.cjs file!');
 }
-global.Config = require('./config');
+global.Config = require('./config.cjs');
 
 const PORT = global.Config.port || process.env.PORT || 8088;
 
@@ -96,7 +96,7 @@ try {
 }
 
 // Routes
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes/index.cjs'));
 
 app.use((req, res, next) => {
 	let err = new Error('Không tìm thấy trang');

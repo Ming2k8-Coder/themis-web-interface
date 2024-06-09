@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Image } from 'react-bootstrap';
 const path = require('path');
-const axios = require('axios');
+import axios from 'axios'
 
 /**
  * Serves as the displaying badge to the right of the submission list.

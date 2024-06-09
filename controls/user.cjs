@@ -5,7 +5,7 @@ const fs = require('fs');
 const debug = require('debug')('themis:controls:user');
 const eventEmitter = require('events');
 
-const UserLog = require('./userlog');
+const UserLog = require('./userlog.cjs');
 
 let xmlFile = null;
 
