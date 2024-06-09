@@ -4,7 +4,7 @@
   "description": "A web interface for Themis, written in Node.js",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cross-env DEBUG=gulp* gulp copy-deps --gulpfile gulp_copydeps.js",
+    "postinstall": "cross-env DEBUG=gulp* gulp copy-deps",
     "test": "mocha --recursive tests/",
     "start": "cross-env DEBUG=themis:* node index.js",
     "prod": "cross-env NODE_ENV=production DEBUG=themis:* node index.js",
