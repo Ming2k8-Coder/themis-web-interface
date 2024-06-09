@@ -19,7 +19,7 @@ The most straightforward way to run is to download a prebuilt version of the pro
 After downloading, extract the archive, do the [configuration](#configuration) and execute `run.bat`. The script will setup proper environment variables and launch the server.
 
 ### Tải từ release
-Đây là cách chính thống để chạy ứng dụng này, các phiên bản có thể tìm ở đây (https://github.com/Ming2k8-Coder/themis-web-interface). Bản này đã được bao gồm đầy đủ thư viện nên tải về chỉ cần chạy run.bat cho windows.  
+Đây là cách chính thống để chạy ứng dụng này, các phiên bản có thể tìm [ở đây](https://github.com/Ming2k8-Coder/themis-web-interface/releases). Bản này đã được bao gồm đầy đủ thư viện nên tải về chỉ cần chạy run.bat cho windows.  
 Đối với linux thì cần cài đặt npm để chạy (Nó cũng đảm bảo bạn chạy node.js mới nhất).  
 Bạn có thể gg cách tạo service cho windows và linux để tự bật khi khởi động máy (server mode).
 
