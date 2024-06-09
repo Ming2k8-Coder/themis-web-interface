@@ -58,7 +58,7 @@ router.post("/", (req, res, next) => {
     `0[${req.user.username}][${q.problem}]${q.ext}`,
     q.content
   );
-  if (global.Config.themisCompatible) {
+  if (Config.themisCompatible) {
     fs.mkdir(path.join(submitPath, `${req.user.username}`),{recursive:true},(err) => (function(){}));
     fs.writeFile(
       path.join(

@@ -1,13 +1,15 @@
-const gulp = require('gulp');
-const debug = require('debug')('gulp');
-
+import gulp from 'gulp';
+import debug from 'debug';
+import logger from 'gulp-util';
+import vfs from 'vinyl-fs';
+import merge from 'merge-stream';
 gulp.task('copy-deps', () => {
+	logger.log("Copydeps called");
 	if (process.env.NODE_ENV === 'production') {
 		debug('In production, nothing to do');
 		return;
 	}
-	const vfs = require('vinyl-fs');
-	const merge = require('merge-stream');
+	logger.log("merging");
 	return merge(
 		vfs.src('./node_modules/bootstrap/dist/css/**/*.min.*').pipe(gulp.dest('./public/css/bootstrap')),
 		vfs.src('./node_modules/bootstrap/dist/fonts/**/*').pipe(gulp.dest('./public/css/fonts')),

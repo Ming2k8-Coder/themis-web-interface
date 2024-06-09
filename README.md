@@ -60,7 +60,7 @@ Themis' online submitting directory should be changed to `data\submit`. There's 
 Any public files should be put into `data\files` directory. It will automatically be cached into the server to avoid LFI attacks.
 
 ## Building
-For best compatibility with my own build scripts I recommend using [yarn](https://yarnpkg.com) over npm. Currently the build scripts should work fine with npm however this is not promised in the future.
+Build scripts are forced to run with yarn, not compatible with npm any more.
 
 First run `yarn` (`npm install` with npm) to install all build modules. This could take some time, as there are lots of modules required.
 
@@ -69,7 +69,7 @@ Open a terminal within the source code's root folder and type `yarn build` (`npm
 Alternatively `yarn build-jsx` (`npm run build-jsx`) can be used to only build the JSX files with Browserify.
 
 ## Contributing
-Please follow the ESLint restrictions included with the source code. I am glad to look at any problem you face and will kindly respond to all legitimate PRs so do not hesitate. Feature requests are also welcomed, however if you only come up with the idea and no details or any intent to code / help me out with its implementation, please go away.
+Please follow the ESLint restrictions included with the source code. I am glad to look at any problem you face and will kindly respond to all legitimate PRs so do not hesitate. Feature requests are also welcomed, however if you only come up with the idea and no details or any intent to code / help me out with its implementation, please go away.  
 
 ### LF / CRLF Problem (git attribute fix soon)
 All code files ends a line with `LF`. Only real data files (e.g. log files in `tests/`) can be allowed to end with CRLF. I will disaprove any PR using CRLF.

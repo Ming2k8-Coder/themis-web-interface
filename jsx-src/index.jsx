@@ -92,6 +92,7 @@ class Main extends React.Component {
 		})
 			.then(({ status, data }) => {
 				if (status !== 200 || data !== true) return Promise.reject(new Error(data || 'Submit failed'));
+				alert("Nộp bài thành công");
 				const newSub = this.state.submissions.slice();
 				newSub[this.state.selected].saveStatus = 'submitted';
 				newSub[this.state.selected].result = {};
