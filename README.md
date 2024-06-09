@@ -3,9 +3,9 @@
 
 A web interface for Themis, written in Node.js
 
-- [Running](#running)
-	- [From prebuilt archive](#from-prebuilt-archive)
-	- [From source](#from-source)
+- [Running(Cách chạy)](#running)
+	- [From prebuilt archive(Tải từ release)](#from-prebuilt-archive)
+	- [From source(Nâng cao)](#from-source)
 - [Configuration](#configuration)
 - [Building](#building)
 - [Contributing](#contributing)
@@ -15,8 +15,13 @@ A web interface for Themis, written in Node.js
 
 ## Running
 ### From prebuilt archive
-The most straightforward way to run is to download a prebuilt version of the project [here](https://github.com/natsukagami/themis-web-interface/releases). This includes all production required modules, as well as a bundled Node.js executable (Windows only) and a batch script file to quickly start the server (Windows only, again).
+The most straightforward way to run is to download a prebuilt version of the project [here](https://github.com/Ming2k8-Coder/themis-web-interface). This includes all production required modules, as well as a bundled Node.js executable (Windows)  and a batch script file to quickly start the server (Windows only).
 After downloading, extract the archive, do the [configuration](#configuration) and execute `run.bat`. The script will setup proper environment variables and launch the server.
+
+### Tải từ release
+Đây là cách chính thống để chạy ứng dụng này, các phiên bản có thể tìm ở đây (https://github.com/Ming2k8-Coder/themis-web-interface). Bản này đã được bao gồm đầy đủ thư viện nên tải về chỉ cần chạy run.bat cho windows.  
+Đối với linux thì cần cài đặt npm để chạy (Nó cũng đảm bảo bạn chạy node.js mới nhất).  
+Bạn có thể gg cách tạo service cho windows và linux để tự bật khi khởi động máy (server mode).
 
 ### From source
 The source code also provides a prebuilt production-ready version of Browserify `index.js`.
