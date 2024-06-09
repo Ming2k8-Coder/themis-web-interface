@@ -15,7 +15,7 @@ A web interface for Themis, written in Node.js
 
 ## Running
 ### From prebuilt archive
-The most straightforward way to run is to download a prebuilt version of the project [here](https://github.com/Ming2k8-Coder/themis-web-interface). This includes all production required modules, as well as a bundled Node.js executable (Windows)  and a batch script file to quickly start the server (Windows only).
+The most straightforward way to run is to download a prebuilt version of the project [here](https://github.com/Ming2k8-Coder/themis-web-interface/releases). This includes all production required modules, as well as a bundled Node.js executable (Windows)  and a batch script file to quickly start the server (Windows only).
 After downloading, extract the archive, do the [configuration](#configuration) and execute `run.bat`. The script will setup proper environment variables and launch the server.
 
 ### Tải từ release
